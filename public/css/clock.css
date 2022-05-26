@@ -1,0 +1,22 @@
+
+#clock{
+    
+  
+    font-size:1.1rem;
+    
+    color:#ffffff;
+   
+}
+#clock span {
+    color:#ffffff;
+   
+    font-size:.8rem;
+    position:relative;
+   
+}
+#date {
+    
+    font-size:1.1rem;
+   
+    color:#ffffff;
+}

@@ -1,0 +1,28 @@
+{
+    "venues": [
+        {
+           
+            "name": "ESOMA Parking",
+            "geometry": [
+                38.966670248452544,
+                -0.18267525773760687
+            ]
+        },
+        {
+           
+            "name": "Ayuntamiento Gandia",
+            "geometry": [
+                38.96669173035226,
+                -0.1798547595885088
+            ]
+        },
+        {
+           
+            "name": "Palau Ducal dels Borja",
+            "geometry": [
+                38.96602490102282,
+                -0.18013010191687895
+            ]
+        }
+    ]
+}

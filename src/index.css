@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-ajust: 100%;
+  -moz-text-size-ajust: 100%;
+  -webkit-text-size-ajust: 100%;
+  overflow: auto;
+  height: 100%;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* Global Styles */
+:root {
+  --primary-color: #77b3f0;
+  --dark-color: #333;
+  --light-color: #999;
+  --danger-color: #eb7ceb;
+  --success-color: #5de07c;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+ /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1663bb, #09203a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1663bb,
+    #09203a
+  ); /* W3C, IE 10+/ 
+  Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #77b3f0;
+}
+.App {
+  margin: 10px auto;
+  max-width: 95%;
+  color: #77b3f0;
+  align-items: center;
+}
+container-fluid {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.form {
+ 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0.8rem;
+  
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding: .9rem;
+  border-radius: 0.5rem;
+  list-style-type: none;
+  margin: .3rem auto;
+  display: inline-block;
+  word-break: break-word;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+table {
+  border-collapse: collapse;
+  table-layout: auto !important;
+}
+table, 
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+  color:#77b3f0;
+  width: auto !important;
+
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  color: white;
+  font-size: 1.1rem;
+}
+input:not([type="checkbox"]):not([type="submit"]) {
+  width: 100%;
+  padding: .3rem;
+  box-sizing: border-box;
+  background: #141e30;
+  color: #fff;
+  border: 0;
+}
+input[type="submit"] {
+  margin:5px auto;
+  background: #141e30;
+  color: #fff;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+}
+.bg-transparent {
+  background-color: rgba(32, 176, 0, 0.1);
+}
+.bg-blue {
+  background-color: #1663bb;
+}
+.overflow {
+  overflow: hidden;
+}
+/* Cards */
+.card {
+  max-width: 100%;
+  box-shadow: inset;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #1663bb;
+  margin: auto;
+ 
+}
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.7s linear;
+}
+.card-header {
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  background-color: #1663bb;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem !important;
+  color: white;
+}
+.card-text {
+  padding: 0.1rem 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+}
+i {
+  color: #77b3f0;
+}
+
+a {
+  text-decoration: none;
+  color: #77b3f0;
+}
+a:hover {
+  color: yellowgreen;
+}
+a:active {
+  color: red;
+}
+p {
+  color: #77b3f0;
+}
+a:hover {
+  color: white;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+h3 {
+  font-size: 1rem;
+  color: #77b3f0;
+}
+h2,
+i {
+  font-size: 1.5rem;
+  color: #77b3f0;
+}
+h4 {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: lighter;
+  text-align: left;
+}
+h5 {
+  text-align: left;
+  color: #77b3f0;
+  font-size: 1rem;
+}
+span {
+  text-align: left;
+  color: #77b3f0;
+  font-size: 1rem;
+}
+h6 {
+  color: var(--light-color);
+  text-align: center;
+}
+.logo {
+  width: 90%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 40%;
+  -webkit-box-shadow: outset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: outset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.img-block {
+  align-content: center;
+  display: block;
+  max-width: auto;
+  height: auto;
+}
+.img-thumnail {
+
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+}
+.overflow {
+  overflow: hidden;
+}
+/* Chatbox */
+.chatbox {
+  color: #000000;
+  position: fixed;
+  right: 3rem;
+  top: 6rem;
+  
+
+}
+.chatbox ul {
+ 
+  max-height: 60rem;
+  
+}
+.chatbox li {
+  margin-top: 1rem;
+  list-style: none;
+}
+.chatbox input {
+  width: calc(100% - 9rem);
+}
+.full-container {
+  margin-top:1rem;
+  margin: -1rem;
+  height: calc(100% + 2rem);
+  width: 100%;
+}
+.support-users {
+  margin: 1rem;
+  background:#09203a;
+  height: 100%;
+  min-width: 90px;
+ 
+  
+}
+
+.support-users button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  min-width: 80px;
+}
+.support-users li {
+  margin: .3rem;
+  background-color: #09203a;
+  border-bottom: 0.1rem #77b3f0 solid;
+  list-style: none;
+   
+}
+.color-white {
+
+  color:white;
+}
+.support-users li:hover {
+  background-color: #77b3f0;
+}
+.support-users li.selected {
+  background-color: #77b3f0;
+  border: .4rem #77b3f0 solid;
+  border-radius: 0.5rem;
+}
+.support-messages {
+  padding: 1rem;
+  min-width: 200px;
+  display: inline-block;
+  word-break: break-word;
+}
+.support-messages input {
+  width: calc(100% - 1rem);
+}
+.support-messages ul {
+  height: calc(100vh - 30rem);
+  max-height: calc(100vh - 30rem);
+  
+}
+.support-messages li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.support-users span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -1px;
+  margin-top: 10px;
+}
+.support-users .offline {
+  background-color: #f0d465;
+}
+.support-users .online {
+  background-color: #20a020;
+}
+.support-users .unread {
+  background-color: #f02020;
+}

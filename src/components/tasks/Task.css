@@ -1,0 +1,32 @@
+.task-list{
+    margin: 0.5rem;
+  }
+  .task-list ul{
+    padding: 0;
+    list-style-type: none;
+  }
+  .task-list li{
+    background: #6d3d6d;
+    border-radius: 4px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .task-list li:hover{
+    opacity: 0.7;
+    text-decoration: line-through;
+  }
+  .task-list .title{
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .task-list .description{
+    font-size: 0.9em;
+    color: #ddd;
+  }
+  .empty{
+    margin: 5px;
+    text-align: center;
+  }
+  
