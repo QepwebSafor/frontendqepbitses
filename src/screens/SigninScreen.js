@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate , useLocation,} from "react-router-dom";
 import { signin } from "../actions/userActions";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
 export default function SigninScreen(props) {
   const navigate = useNavigate();
+  const { search } = useLocation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const redirectInUrl = new URLSearchParams(search).get('redirect');
+  const redirect = redirectInUrl ? redirectInUrl : '/';
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo, loading, error } = userSignin;
 
@@ -17,12 +19,13 @@ export default function SigninScreen(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(signin(email, password));
+    navigate(redirect || '/');
   };
   useEffect(() => {
     if (userInfo) {
-      navigate("/profile");
+      navigate(redirect);
     }
-  }, [ navigate, userInfo]);
+  }, [navigate, redirect, userInfo]);
   return (
     <div className="container-fluid">
     <div className="row  mx-auto">
